@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.imagediv{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: black;
+}
+#sign{
+    position: absolute;
+    color: white;   
+    padding:5px;
+    font-size: 50px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 433px;
+    background-color: bisque;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dp{
+margin-top: 40px;
+}
+.dp img{
+    border-radius: 50%;
+    background-color:cornsilk;
+    
+}
+.profile p{
+    margin-top: 20px;
+   font-size: 50px;
+   font-family: 'Comforter', cursive;
+   font-weight: bold;
+   letter-spacing: 5px;
+   text-align: center;
+}
+.menu ul li a{
+  font-size: 30px;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.menu ul{
+    margin-top: 20px;
+}
+.menu ul li{
+    margin: 40px;
+    background: rgb(171,167,239);
+    background: linear-gradient(90deg, rgba(171,167,239,1) 2%, rgba(221,230,64,1) 17%, rgba(238,246,142,0.49933476808692223) 33%, rgba(46,216,216,0.6730042358740371) 64%, rgba(0,212,255,1) 99%);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.menu ul li a:hover{
+    color:brown;
+  }
+
+@media(max-width:442px){
+    #sign{
+        position: absolute;
+        color: white;   
+        padding:5px;
+        font-size: 35px;
+    }
+    .dp{
+        width:150px ;
+        height: 170px;
+        
+    }
+    .menu ul li a{
+        font-size: 20px;
+      }
+      .profile p{
+       font-size: 30px;
+    }
+}
+@media(max-width:375px){
+    #sign{
+
+        font-size: 30px;
+    }
+    .dp{
+        width:120px ;
+        height: 170px;
+        
+    }
+    .menu ul li a{
+        font-size: 15px;
+      }
+      .profile p{
+       font-size: 30px;
+       margin-left: 40px;
+    }
+}
