@@ -1,4 +1,4 @@
-       var images=[
+      var images=[
         `<img src="https://img.icons8.com/dotty/160/000000/finn.png"/>`,
         `<img src="https://img.icons8.com/dotty/160/000000/mongrol.png"/>`,
         `<img src="https://img.icons8.com/dotty/160/000000/jake.png"/>`,
@@ -26,5 +26,14 @@
         localStorage.setItem(last_value.serial,JSON.stringify(last_value));
         dp.innerHTML=`${images[index]}`;
        }
-       
+       const sign=document.querySelector("#sign");
+       sign.addEventListener("click",function(){
+              var keys = Object.keys(localStorage);
+       keys.sort();
+      /*  console.log(keys); */
+       var last_value= JSON.parse(localStorage.getItem(keys[keys.length-1]));
+       console.log(last_value.serial);
+              localStorage.removeItem(`${last_value.serial}`);
+       })
+        
 /* import { vale } from "../Front Page/app.js"; */
